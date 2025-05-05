@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_main_page"
+        android:icon="@drawable/ic_home"
+        android:title="Ana Sayfa"/>
+
+    <item
+        android:id="@+id/nav_books"
+        android:icon="@drawable/ic_books"
+        android:title="Kitaplar"/>
+
+    <item
+        android:id="@+id/nav_jokes"
+        android:icon="@drawable/ic_jokes"
+        android:title="Fıkralar"/>
+
+    <item
+        android:id="@+id/nav_settings"
+        android:icon="@drawable/ic_settings"
+        android:title="Ayarlar"/>
+
+</menu>
