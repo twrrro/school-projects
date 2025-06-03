@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">EBookReader</string>
+    <string name="app_name">E-Kitap Okuyucu</string>
+    <string name="title_activity_reader">Kitap Okuyucu</string>
 </resources>

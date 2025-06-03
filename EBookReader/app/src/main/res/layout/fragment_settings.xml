@@ -1,15 +1,81 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SettingsFragment">
+    android:padding="16dp"
+    tools:context=".fragments.SettingsFragment">
+
+    <TextView
+        android:id="@+id/textViewSettingsTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ayarlar"
+        android:textAppearance="?attr/textAppearanceHeadline5"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"/>
+
+    <LinearLayout
+        android:id="@+id/layoutFontSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewSettingsTitle"
+        android:orientation="vertical"
+        android:layout_marginBottom="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yazı Tipi Boyutu (EPUB)"
+            android:textAppearance="?attr/textAppearanceSubtitle1"
+            android:layout_marginBottom="8dp"/>
+
+        <RadioGroup
+            android:id="@+id/radioGroupFontSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/radioButtonSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:text="Küçük"/>
+
+            <RadioButton
+                android:id="@+id/radioButtonMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:text="Orta"/>
+
+            <RadioButton
+                android:id="@+id/radioButtonLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:text="Büyük"/>
+        </RadioGroup>
+    </LinearLayout>
+
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:id="@+id/switchDarkMode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layoutFontSize"
+        android:text="Karanlık Mod"
+        android:textAppearance="?attr/textAppearanceSubtitle1"
+        android:minHeight="48dp"
+        android:layout_marginTop="16dp"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Ayarlar Fragment"
-        android:textSize="24sp"
-        android:layout_gravity="center"/>
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:text="Diğer ayarlar yakında eklenecektir."
+        android:textAppearance="?attr/textAppearanceCaption"
+        android:gravity="center"/>
 
-</FrameLayout>
+</RelativeLayout>
